@@ -1,0 +1,12 @@
+@(message: String)(typeofinput: String)(options: String)
+@main("Welcome to Play") {
+    <h1>@message</h1>
+    <h1>@typeofinput</h1>
+    <h1>@options</h1>
+    <form action="singlePageSurvey" method="POST">
+        Client Input: <input type="text" name="client-input" value=""><br>
+
+        <input type="submit" value="submit input">
+    </form>
+
+}

@@ -1,0 +1,12 @@
+@(message: String)(name: String)(gender: String)
+@main("Welcome to Play") {
+    <h1>@message</h1>
+    <h4>Options: [Reading, Cooking, Sleeping]</h4>
+    <form action="getHobbies" method="POST">
+        Client Input: <input type="text" name="client-input" value=""><br>
+            <input type="hidden" name="name" value="@name">
+            <input type="hidden" name="gender" value="@gender">
+        <input type="submit" value="submit input">
+    </form>
+
+}

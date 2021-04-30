@@ -1,0 +1,9 @@
+@(message: String)
+@main("Welcome to Play") {
+    <h1>@message</h1>
+    <form action="getName" method="POST">
+        Client Input: <input type="text" name="client-input" value=""><br>
+        <input type="submit" value="submit input">
+    </form>
+
+}
